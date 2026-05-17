@@ -1,1 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUX Hotel Diani | Beach Resort</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://source.unsplash.com/random/1920x1080/?diani-beach,luxury-resort');
+      background-size: cover;
+      background-position: center;
+    }
+    .gold { color: #d4af37; }
+    .nav-link { transition: all 0.3s; }
+    .nav-link:hover { color: #d4af37; }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
 
+  <!-- Navbar -->
+  <nav class="bg-black/90 backdrop-blur-md fixed w-full z-50 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-light tracking-widest">
+        LUX <span class="gold text-xl">HOTEL</span>
+      </h1>
+      
+      <div class="hidden md:flex space-x-10 text-sm uppercase tracking-widest">
+        <a href="#rooms" class="nav-link">Rooms & Villas</a>
+        <a href="#experiences" class="nav-link">Experiences</a>
+        <a href="#dining" class="nav-link">Dining</a>
+        <a href="#amenities" class="nav-link">Amenities</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </div>
+      
+      <button onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"
+              class="bg-transparent border border-gold text-gold hover:bg-gold hover:text-black px-8 py-3 rounded-full transition uppercase text-sm tracking-widest">
+        Book Your Stay
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero h-screen flex items-center justify-center text-center">
+    <div class="max-w-4xl px-6">
+      <p class="uppercase tracking-[4px] text-gold text-sm mb-4">Diani Beach, Kenya</p>
+      <h2 class="text-6xl md:text-7xl font-light leading-tight mb-6">
+        LUXURY REDEFINED<br>ON THE SHORES OF DIANI
+      </h2>
+      <p class="text-xl md:text-2xl mb-10 text-gray-200">Private beach • Oceanfront villas • Unforgettable sunsets</p>
+      <button onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"
+              class="bg-gold text-black px-12 py-5 rounded-full text-lg font-medium hover:scale-105 transition">
+        Reserve Your Escape
+      </button>
+    </div>
+  </section>
+
+  <!-- Rooms & Villas -->
+  <section id="rooms" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-light text-center mb-4">Rooms & Villas</h2>
+      <p class="text-center text-gray-400 mb-12">Ocean views, private pools & barefoot luxury</p>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+          <img src="https://source.unsplash.com/random/600x400/?luxury-villa,ocean" class="w-full h-72 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <h3 class="text-2xl">Oceanfront Suite</h3>
+            <p class="text-gold text-2xl mt-2">KSh 45,000 / night</p>
+            <button class="mt-6 w-full border border-gold py-4 rounded-2xl hover:bg-gold hover:text-black transition">View Details</button>
+          </div>
+        </div>
+        
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+          <img src="https://source.unsplash.com/random/600x400/?private-pool-villa" class="w-full h-72 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <h3 class="text-2xl">Private Pool Villa</h3>
+            <p class="text-gold text-2xl mt-2">KSh 85,000 / night</p>
+            <button class="mt-6 w-full border border-gold py-4 rounded-2xl hover:bg-gold hover:text-black transition">View Details</button>
+          </div>
+        </div>
+        
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+          <img src="https://source.unsplash.com/random/600x400/?beach-suite" class="w-full h-72 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <h3 class="text-2xl">Deluxe Beach Room</h3>
+            <p class="text-gold text-2xl mt-2">KSh 28,000 / night</p>
+            <button class="mt-6 w-full border border-gold py-4 rounded-2xl hover:bg-gold hover:text-black transition">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section id="amenities" class="py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-light text-center mb-16">Signature Experiences</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div><i class="fas fa-swimming-pool text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Infinity Pool</p></div>
+        <div><i class="fas fa-spa text-4xl gold mb-4"></i><p class="uppercase tracking-widest">LUX Spa</p></div>
+        <div><i class="fas fa-utensils text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Beachfront Dining</p></div>
+        <div><i class="fas fa-water text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Private Beach</p></div>
+        <div><i class="fas fa-dumbbell text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Fitness Centre</p></div>
+        <div><i class="fas fa-yacht text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Water Sports</p></div>
+        <div><i class="fas fa-concierge-bell text-4xl gold mb-4"></i><p class="uppercase tracking-widest">24/7 Butler</p></div>
+        <div><i class="fas fa-wifi text-4xl gold mb-4"></i><p class="uppercase tracking-widest">High-Speed WiFi</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-24 bg-zinc-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-light mb-8">Book Your Diani Escape</h2>
+      <div class="bg-black/50 backdrop-blur p-10 rounded-3xl border border-gold/30">
+        <form class="grid md:grid-cols-2 gap-6">
+          <input type="date" class="bg-zinc-800 p-5 rounded-2xl focus:outline-none focus:border-gold border border-transparent">
+          <input type="date" class="bg-zinc-800 p-5 rounded-2xl focus:outline-none focus:border-gold border border-transparent">
+          <select class="bg-zinc-800 p-5 rounded-2xl focus:outline-none focus:border-gold border border-transparent">
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3+ Guests</option>
+          </select>
+          <button type="submit" class="md:col-span-2 bg-gold text-black py-6 rounded-2xl text-lg font-medium hover:bg-amber-400 transition">
+            Check Availability & Rates
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black py-16 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-light mb-4">LUX Hotel Diani</h2>
+      <p class="text-gray-400">Diani Beach, Kwale County, Kenya</p>
+      <p class="mt-8 text-sm text-gray-500">© 2026 LUX Hotel. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUX Hotel Diani | Beach Resort</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://source.unsplash.com/random/1920x1080/?diani-beach,luxury-resort');
+      background-size: cover;
+      background-position: center;
+    }
+    .gold { color: #d4af37; }
+    .nav-link { transition: all 0.3s; }
+    .nav-link:hover { color: #d4af37; }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-black/90 backdrop-blur-md fixed w-full z-50 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-light tracking-widest">
+        LUX <span class="gold text-xl">HOTEL</span>
+      </h1>
+      
+      <div class="hidden md:flex space-x-10 text-sm uppercase tracking-widest">
+        <a href="#rooms" class="nav-link">Rooms & Villas</a>
+        <a href="#experiences" class="nav-link">Experiences</a>
+        <a href="#dining" class="nav-link">Dining</a>
+        <a href="#amenities" class="nav-link">Amenities</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </div>
+      
+      <button onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"
+              class="bg-transparent border border-gold text-gold hover:bg-gold hover:text-black px-8 py-3 rounded-full transition uppercase text-sm tracking-widest">
+        Book Your Stay
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero h-screen flex items-center justify-center text-center">
+    <div class="max-w-4xl px-6">
+      <p class="uppercase tracking-[4px] text-gold text-sm mb-4">Diani Beach, Kenya</p>
+      <h2 class="text-6xl md:text-7xl font-light leading-tight mb-6">
+        LUXURY REDEFINED<br>ON THE SHORES OF DIANI
+      </h2>
+      <p class="text-xl md:text-2xl mb-10 text-gray-200">Private beach • Oceanfront villas • Unforgettable sunsets</p>
+      <button onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"
+              class="bg-gold text-black px-12 py-5 rounded-full text-lg font-medium hover:scale-105 transition">
+        Reserve Your Escape
+      </button>
+    </div>
+  </section>
+
+  <!-- Rooms & Villas -->
+  <section id="rooms" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-light text-center mb-4">Rooms & Villas</h2>
+      <p class="text-center text-gray-400 mb-12">Ocean views, private pools & barefoot luxury</p>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+          <img src="https://source.unsplash.com/random/600x400/?luxury-villa,ocean" class="w-full h-72 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <h3 class="text-2xl">Oceanfront Suite</h3>
+            <p class="text-gold text-2xl mt-2">KSh 45,000 / night</p>
+            <button class="mt-6 w-full border border-gold py-4 rounded-2xl hover:bg-gold hover:text-black transition">View Details</button>
+          </div>
+        </div>
+        
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+          <img src="https://source.unsplash.com/random/600x400/?private-pool-villa" class="w-full h-72 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <h3 class="text-2xl">Private Pool Villa</h3>
+            <p class="text-gold text-2xl mt-2">KSh 85,000 / night</p>
+            <button class="mt-6 w-full border border-gold py-4 rounded-2xl hover:bg-gold hover:text-black transition">View Details</button>
+          </div>
+        </div>
+        
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden">
+          <img src="https://source.unsplash.com/random/600x400/?beach-suite" class="w-full h-72 object-cover group-hover:scale-105 transition">
+          <div class="p-8">
+            <h3 class="text-2xl">Deluxe Beach Room</h3>
+            <p class="text-gold text-2xl mt-2">KSh 28,000 / night</p>
+            <button class="mt-6 w-full border border-gold py-4 rounded-2xl hover:bg-gold hover:text-black transition">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section id="amenities" class="py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-light text-center mb-16">Signature Experiences</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div><i class="fas fa-swimming-pool text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Infinity Pool</p></div>
+        <div><i class="fas fa-spa text-4xl gold mb-4"></i><p class="uppercase tracking-widest">LUX Spa</p></div>
+        <div><i class="fas fa-utensils text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Beachfront Dining</p></div>
+        <div><i class="fas fa-water text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Private Beach</p></div>
+        <div><i class="fas fa-dumbbell text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Fitness Centre</p></div>
+        <div><i class="fas fa-yacht text-4xl gold mb-4"></i><p class="uppercase tracking-widest">Water Sports</p></div>
+        <div><i class="fas fa-concierge-bell text-4xl gold mb-4"></i><p class="uppercase tracking-widest">24/7 Butler</p></div>
+        <div><i class="fas fa-wifi text-4xl gold mb-4"></i><p class="uppercase tracking-widest">High-Speed WiFi</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-24 bg-zinc-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-light mb-8">Book Your Diani Escape</h2>
+      <div class="bg-black/50 backdrop-blur p-10 rounded-3xl border border-gold/30">
+        <form class="grid md:grid-cols-2 gap-6">
+          <input type="date" class="bg-zinc-800 p-5 rounded-2xl focus:outline-none focus:border-gold border border-transparent">
+          <input type="date" class="bg-zinc-800 p-5 rounded-2xl focus:outline-none focus:border-gold border border-transparent">
+          <select class="bg-zinc-800 p-5 rounded-2xl focus:outline-none focus:border-gold border border-transparent">
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3+ Guests</option>
+          </select>
+          <button type="submit" class="md:col-span-2 bg-gold text-black py-6 rounded-2xl text-lg font-medium hover:bg-amber-400 transition">
+            Check Availability & Rates
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black py-16 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-light mb-4">LUX Hotel Diani</h2>
+      <p class="text-gray-400">Diani Beach, Kwale County, Kenya</p>
+      <p class="mt-8 text-sm text-gray-500">© 2026 LUX Hotel. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
